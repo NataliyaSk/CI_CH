@@ -24,7 +24,7 @@ class FlaskAppTests(unittest.TestCase):
     def test_mult_success(self):
         r = self.app.get('/mult?a=2&b=3')
         self.assertEqual(r.status_code, 200)
-        self.assertEqual(r.data, b'6.0')
+        self.assertEqual(r.data, '6.0')
 ##
 ###
 if __name__ == '__main__':
